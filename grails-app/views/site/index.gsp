@@ -6,6 +6,8 @@
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>
     <body>
+
+    <h1>MODIFICACION INDEX SITE PARA PROBAR GITHUB</h1>
         <a href="#list-site" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div class="nav" role="navigation">
             <ul>
