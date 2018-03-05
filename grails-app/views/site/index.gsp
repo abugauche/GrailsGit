@@ -24,6 +24,7 @@
             </g:if>
             <g:each var="site" in="${siteList}">
                 -------------
+                -------------
                 <p>Name: ${site.name}</p>
                 <p>String: ${site.idSite}</p>
                 <g:if test="${"${site.active}"=='true'}">
