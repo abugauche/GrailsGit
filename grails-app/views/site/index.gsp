@@ -20,8 +20,18 @@
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:table collection="${siteList}" />
+            <g:each var="site" in="${siteList}">
+                -------------
+                <p>Name: ${site.name}</p>
+                <p>String: ${site.idSite}</p>
+                <g:if test="${"${site.active}"=='true'}">
+                    <p style="color:green;">Sitio activo</p>
 
+                </g:if>
+                <g:else>
+                    <p style="color:red;">Sitio inactivo</p>
+                </g:else>
+            </g:each>
             <div class="pagination">
                 <g:paginate total="${siteCount ?: 0}" />
             </div>
